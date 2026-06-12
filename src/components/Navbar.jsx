@@ -1,6 +1,5 @@
 function Navbar() {
   return (
-    //  [1160px] h=[70px]
     <nav className="w-full bg-white font-sans text-[14px]">
       <div className="max-w-[1160px] mx-auto lg:ml-[140px] px-4 sm:px-6 py-4 flex flex-wrap lg:flex-nowrap items-center justify-between border-b border-gray-100">
 

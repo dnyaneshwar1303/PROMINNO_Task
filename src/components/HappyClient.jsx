@@ -24,7 +24,7 @@ function HappyClients() {
 
         <div className="flex items-center justify-center max-w-5xl mx-auto space-x-0 md:space-x-4">
           
-          {/* Left Arrow */}
+          {/* left arrow */}
           <button className="p-2.5 rounded-full border border-gray-200 bg-gray-50 hover:bg-gray-100 hidden md:block transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-md active:scale-95">
             <ArrowLeft className="w-4 h-4 text-gray-600 transition-all duration-300 ease-in-out" />
           </button>
@@ -62,7 +62,7 @@ function HappyClients() {
             ))}
           </div>
 
-          {/* Right Arrow */}
+          {/* right arrow */}
           <button className="p-2.5 rounded-full border border-gray-200 bg-gray-50 hover:bg-gray-100 hidden md:block transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-md active:scale-95">
             <ArrowRight className="w-4 h-4 text-gray-600 transition-all duration-300 ease-in-out" />
           </button>
