@@ -24,7 +24,7 @@ function Footer() {
           
           <div className="space-y-4">
             <div className="w-[70px] h-[70px] transition-all duration-300 ease-in-out hover:scale-105 hover:rotate-3">
-              <img src="/public/logo.png" alt="logo" />
+              <img src="/logo.png" alt="logo" />
             </div>
             <p className="text-[#808080] text-[13px] leading-[160%] transition-all duration-300 ease-in-out hover:text-[#606060]">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sintelit officia consequat
