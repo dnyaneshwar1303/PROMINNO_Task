@@ -7,7 +7,7 @@ function Navbar() {
         <div className="flex items-center cursor-pointer group">
           <div className="w-[55px] h-[55px] sm:w-[70px] sm:h-[70px] bg-black rounded-full flex items-center justify-center text-white text-xl font-bold transition-all duration-300 group-hover:scale-105 group-hover:rotate-3">
             <img
-              src="/public/logo.png"
+              src="/logo.png"
               alt="logo"
               className="transition-all duration-300"
             />

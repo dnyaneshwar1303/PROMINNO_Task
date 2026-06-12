@@ -13,32 +13,32 @@ function OurPartners() {
         <div className="flex items-center justify-center w-[120px] sm:w-[140px] lg:w-[155px] transition-all duration-300 ease-in-out hover:scale-110">
           <img
             className="w-full h-auto object-contain transition-all duration-300 ease-in-out hover:opacity-80"
-            src="/public/logoipsum.png"
-            alt=""
+            src="/logoipsum.png"
+            alt="partner logo"
           />
         </div>
 
         <div className="flex items-center justify-center w-[120px] sm:w-[140px] lg:w-[155px] transition-all duration-300 ease-in-out hover:scale-110">
           <img
             className="w-full h-auto object-contain transition-all duration-300 ease-in-out hover:opacity-80"
-            src="/public/logoipsum.png"
-            alt=""
+            src="/logoipsum.png"
+            alt="partner logo"
           />
         </div>
 
         <div className="flex items-center justify-center w-[120px] sm:w-[140px] lg:w-[155px] transition-all duration-300 ease-in-out hover:scale-110">
           <img
             className="w-full h-auto object-contain transition-all duration-300 ease-in-out hover:opacity-80"
-            src="/public/logoipsum.png"
-            alt=""
+            src="/logoipsum.png"
+            alt="partner logo"
           />
         </div>
 
         <div className="flex items-center justify-center w-[120px] sm:w-[140px] lg:w-[155px] transition-all duration-300 ease-in-out hover:scale-110">
           <img
             className="w-full h-auto object-contain transition-all duration-300 ease-in-out hover:opacity-80"
-            src="/public/logoipsum.png"
-            alt=""
+            src="/logoipsum.png"
+            alt="partner logo"
           />
         </div>
 
