@@ -3,12 +3,12 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="relative w-full max-w-[1440px] min-h-[354px] bg-gradient-to-br from-[#0F172A] via-[#111827] to-[#312E81] font-sans text-[14px] overflow-hidden mx-auto">
-      
+
       <div className="absolute top-10 left-10 w-56 h-56 bg-[#4F46E5] rounded-full blur-3xl opacity-20"></div>
       <div className="absolute bottom-10 right-10 w-56 h-56 bg-[#06B6D4] rounded-full blur-3xl opacity-20"></div>
 
       <div className="relative z-10 max-w-[1160px] mx-auto px-4 sm:px-6 py-12">
-        
+
         <div className="w-full bg-white/10 backdrop-blur-xl text-white rounded-3xl p-6 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 mb-12 border border-white/10 shadow-2xl transition-all duration-500 ease-in-out hover:shadow-indigo-300/20">
           <div className="text-center md:text-left">
             <h3 className="text-2xl md:text-3xl font-bold mb-2">
@@ -25,7 +25,7 @@ function Footer() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 items-start pb-8">
-          
+
           <div className="space-y-4">
             <div className="w-[70px] h-[70px] bg-white rounded-full p-2 transition-all duration-300 ease-in-out hover:scale-105 hover:rotate-3">
               <img src="/logo.png" alt="logo" className="w-full h-full object-contain" />
@@ -43,10 +43,12 @@ function Footer() {
               </h6>
 
               <ul className="space-y-2.5 text-[#CBD5E1] text-[13px]">
-                <li><a href="#" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">About us</a></li>
-                <li><a href="#" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Services</a></li>
-                <li><a href="#" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Projects</a></li>
-                <li><a href="#" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Contact</a></li>
+                <li><a href="#home" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Home</a></li>
+                <li><a href="#why-us" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Why Us</a></li>
+                <li><a href="#strategy" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Strategy</a></li>
+                <li><a href="#blog" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Blog</a></li>
+                <li><a href="#contact" className="hover:text-[#06B6D4] transition-all duration-300 ease-in-out hover:translate-x-1 inline-block">Contact</a></li>
+
               </ul>
             </div>
           ))}
