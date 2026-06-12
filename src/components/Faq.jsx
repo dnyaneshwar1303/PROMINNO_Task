@@ -1,47 +1,87 @@
 import { useState } from "react";
+import { Plus, Minus, MessageCircle } from "lucide-react";
 
 function FAQSection() {
   const [openIdx, setOpenIdx] = useState(0);
 
   const faqs = [
-    { q: "Lorem ipsum dolor sit amet consectetur", a: "Lorem ipsum dolor sit amet consectetur. Pulvinar arcu mattis in at sodales condimentum. Gravida arcu aliquet rutrum erat varius. Tellus felis sed pretium in egestas." },
-    { q: "Lorem ipsum dolor sit amet consectetur", a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-    { q: "Lorem ipsum dolor sit amet consectetur", a: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
+    {
+      q: "How long does a project usually take?",
+      a: "Project timelines depend on complexity, but most websites and digital solutions are delivered within 2-6 weeks."
+    },
+    {
+      q: "Do you provide ongoing support?",
+      a: "Yes, we offer maintenance, updates and technical support to ensure your business continues running smoothly."
+    },
+    {
+      q: "Can you create custom solutions?",
+      a: "Absolutely. We build tailored solutions based on your business goals, requirements and target audience."
+    }
   ];
 
   return (
-    <section className="w-full lg:w-[1440px] lg:h-[586px] py-12 sm:py-16 lg:py-20 max-w-7xl mx-auto px-4 sm:px-6 border-b border-gray-100 bg-[#F8F8F8]">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 items-center max-w-5xl mx-auto">
-        
-        <div className="bg-[#D9D9D9] border border-[#858585] aspect-square w-full max-w-[320px] sm:max-w-[420px] mx-auto relative overflow-hidden transition-all duration-500 ease-in-out hover:bg-[#d1d1d1] hover:shadow-xl">
-          <div className="absolute inset-0 opacity-30 transition-all duration-700 ease-in-out hover:opacity-50">
-            <div className="absolute top-1/2 left-1/2 w-[150%] h-[1px] bg-[#858585] transform -translate-x-1/2 -translate-y-1/2 rotate-[45deg]"></div>
-            <div className="absolute top-1/2 left-1/2 w-[150%] h-[1px] bg-[#858585] transform -translate-x-1/2 -translate-y-1/2 -rotate-[45deg]"></div>
+    <section className="relative w-full max-w-[1440px] min-h-[650px] py-12 sm:py-16 lg:py-20 mx-auto px-4 sm:px-6 bg-gradient-to-br from-[#F8FAFC] via-white to-[#EEF2FF] border-b border-gray-100 overflow-hidden">
+
+      <div className="absolute top-10 left-10 w-52 h-52 bg-[#4F46E5] opacity-10 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-10 right-10 w-52 h-52 bg-[#06B6D4] opacity-10 blur-3xl rounded-full"></div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center max-w-6xl mx-auto">
+
+        <div className="relative">
+          <div className="h-[300px] sm:h-[380px] lg:h-[460px] overflow-hidden rounded-3xl shadow-2xl">
+            <img
+              src="https://staticlearn.shine.com/l/m/images/blog/mobile/roles_and_responsibilities_of_customer_support_executive.webp"
+              alt="Customer Support"
+              className="w-full h-full object-cover transition-all duration-700 hover:scale-105"
+            />
+          </div>
+
+          <div className="absolute -bottom-5 right-4 sm:-right-5 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-xl">
+            <MessageCircle className="w-8 h-8 text-[#4F46E5] mb-2" />
+            <h4 className="font-bold text-[#111827]">24/7 Support</h4>
+            <p className="text-sm text-[#6B7280]">
+              Always here to help
+            </p>
           </div>
         </div>
 
         <div>
-          <h2 className="text-[26px] sm:text-[28px] md:text-[34px] font-semibold text-[#262626] mb-8 transition-all duration-500 ease-in-out hover:-translate-y-1">
+          <span className="inline-block px-4 py-2 rounded-full bg-white border border-indigo-100 text-[#4F46E5] text-sm font-semibold shadow-sm mb-4">
+            Support Center
+          </span>
+
+          <h2 className="text-[30px] sm:text-[36px] font-bold text-[#111827] mb-8">
             Frequently asked questions
           </h2>
 
           <div className="space-y-4">
             {faqs.map((faq, idx) => {
               const isOpen = openIdx === idx;
+
               return (
-                <div key={idx} className="bg-[#FFFFFF] p-5 transition-all duration-300 ease-in-out hover:shadow-md hover:-translate-y-1">
-                  <button 
-                    onClick={() => setOpenIdx(isOpen ? -1 : idx)} 
-                    className="w-full flex items-center justify-between text-left font-medium text-[15px] text-[#262626] transition-all duration-300 ease-in-out hover:text-black"
+                <div
+                  key={idx}
+                  className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
+                >
+                  <button
+                    onClick={() => setOpenIdx(isOpen ? -1 : idx)}
+                    className="w-full flex items-center justify-between p-5 text-left"
                   >
-                    <span>{faq.q}</span>
-                    <span className="text-lg font-bold ml-2 transition-all duration-300 ease-in-out">
-                      {isOpen ? "−" : "+"}
+                    <span className="font-semibold text-[#111827] text-[15px]">
+                      {faq.q}
                     </span>
+
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] flex items-center justify-center text-white flex-shrink-0 ml-3">
+                      {isOpen ? (
+                        <Minus size={16} />
+                      ) : (
+                        <Plus size={16} />
+                      )}
+                    </div>
                   </button>
 
                   {isOpen && (
-                    <div className="mt-3 text-[14px] text-[#606060] leading-[150%] transition-all duration-300 ease-in-out">
+                    <div className="px-5 pb-5 text-[#6B7280] text-[14px] leading-[170%]">
                       {faq.a}
                     </div>
                   )}
@@ -54,6 +94,6 @@ function FAQSection() {
       </div>
     </section>
   );
-};
+}
 
 export default FAQSection;

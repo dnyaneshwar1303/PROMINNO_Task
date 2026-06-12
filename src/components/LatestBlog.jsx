@@ -1,52 +1,69 @@
 function LatestBlog() {
   const blogs = [
     {
+      image: "https://www.swayaminfotech.com/blog/wp-content/uploads/2025/01/AI-Human1028x555.jpg",
       title: "Humans are much more smarter than AI",
-      desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+      desc: "Explore how human creativity, emotions and decision-making still make people powerful in the age of AI."
     },
     {
-      title: "Humans are much more smarter than AI",
-      desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk-JhfMTcjWLcD1-m3hbR0cpQQCviqphIEaQ&s",
+      title: "How digital strategy helps brands grow faster",
+      desc: "Learn how modern digital solutions improve customer engagement and help businesses scale confidently."
     },
     {
-      title: "Humans are much more smarter than AI",
-      desc: "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur."
+      image: "https://www.netsolutions.com/wp-content/uploads/2024/12/1-1.webp",
+      title: "Why great design creates better experiences",
+      desc: "Discover how clean interfaces, strong visuals and smooth interactions improve user trust and conversions."
     }
   ];
 
   return (
-    <section className="w-full lg:w-[1440px] lg:h-[773px] py-12 sm:py-16 lg:py-20 bg-[#F8F8F8] border-b border-gray-100 font-sans">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        
-        <h2 className="font-poppins font-semibold text-[28px] md:text-[36px] text-center text-[#262626] tracking-tight mb-10 lg:mb-14 transition-all duration-500 ease-in-out hover:-translate-y-1">
-          Latest blog
-        </h2>
-        
+    <section className="relative w-full max-w-[1440px] min-h-[773px] py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-[#F8FAFC] via-white to-[#EEF2FF] border-b border-gray-100 font-sans overflow-visible mx-auto">      <div className="absolute top-16 left-10 w-56 h-56 bg-[#4F46E5] rounded-full blur-3xl opacity-10"></div>
+      <div className="absolute bottom-16 right-10 w-56 h-56 bg-[#06B6D4] rounded-full blur-3xl opacity-10"></div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
+
+        <div className="text-center mb-10 lg:mb-14">
+          <span className="inline-block px-4 py-2 rounded-full bg-white border border-indigo-100 text-[#4F46E5] text-sm font-semibold shadow-sm mb-4">
+            Latest Insights
+          </span>
+
+          <h2 className="font-poppins font-bold text-[30px] sm:text-[36px] md:text-[44px] text-center text-[#111827] tracking-tight mb-4">
+            Latest blog
+          </h2>
+
+          <p className="text-[#6B7280] max-w-xl mx-auto text-[15px] leading-[160%]">
+            Read our latest thoughts on design, technology and business growth.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mb-10 lg:mb-14">
           {blogs.map((blog, idx) => (
             <div
               key={idx}
-              className="group flex flex-col bg-white transition-all duration-300 ease-in-out hover:-translate-y-2"
+              className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-lg border border-white transition-all duration-500 ease-in-out hover:-translate-y-3 hover:shadow-2xl hover:shadow-indigo-100"
             >
-              
-              <div className="bg-[#C8C8C8] border border-[#858585] aspect-[380/240] w-full relative overflow-hidden mb-5 transition-all duration-500 ease-in-out group-hover:shadow-xl group-hover:bg-[#bdbdbd]">
-                <div className="absolute inset-0 pointer-events-none opacity-30 transition-all duration-500 ease-in-out group-hover:opacity-50">
-                  <div className="absolute top-1/2 left-1/2 w-[150%] h-[1px] bg-[#858585] transform -translate-x-1/2 -translate-y-1/2 rotate-[32deg]"></div>
-                  <div className="absolute top-1/2 left-1/2 w-[150%] h-[1px] bg-[#858585] transform -translate-x-1/2 -translate-y-1/2 -rotate-[32deg]"></div>
-                </div>
+
+              <div className="aspect-[380/240] w-full relative overflow-hidden">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                />
+
               </div>
 
-              <div className="flex flex-col flex-grow px-1">
-                <h4 className="font-semibold text-[17px] md:text-[18px] text-[#262626] leading-[140%] mb-3 tracking-tight transition-all duration-300 ease-in-out group-hover:text-black">
+              <div className="flex flex-col flex-grow p-6">
+                <h4 className="font-bold text-[18px] md:text-[20px] text-[#111827] leading-[140%] mb-3 tracking-tight transition-all duration-300 ease-in-out group-hover:text-[#4F46E5]">
                   {blog.title}
                 </h4>
-                
-                <p className="text-[#606060] text-[14px] leading-[150%] mb-4 max-w-[340px] transition-all duration-300 ease-in-out group-hover:text-[#404040]">
+
+                <p className="text-[#6B7280] text-[14px] leading-[160%] mb-5 max-w-[340px]">
                   {blog.desc}
                 </p>
-                
-                <span className="text-[13px] font-medium text-[#262626] cursor-pointer mt-auto w-fit transition-all duration-300 ease-in-out group-hover:underline group-hover:translate-x-1">
-                  Learn more
+
+                <span className="text-[14px] font-semibold text-[#4F46E5] cursor-pointer mt-auto w-fit transition-all duration-300 ease-in-out group-hover:translate-x-2">
+                  Learn more →
                 </span>
               </div>
 
@@ -55,8 +72,8 @@ function LatestBlog() {
         </div>
 
         <div className="text-center">
-          <button className="bg-[#1A1A1A] text-white px-10 py-3 rounded-none text-[15px] font-medium min-w-[130px] transition-all duration-300 ease-in-out hover:bg-black hover:scale-105 hover:shadow-xl active:scale-95">
-            Button
+          <button className="bg-gradient-to-r from-[#4F46E5] to-[#06B6D4] text-white px-10 py-3 rounded-full text-[15px] font-semibold min-w-[140px] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-indigo-200 active:scale-95">
+            View All Blogs
           </button>
         </div>
 

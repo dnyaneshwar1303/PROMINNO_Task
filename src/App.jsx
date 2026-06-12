@@ -1,7 +1,7 @@
-import "./App.css"
+import "./App.css";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/Hero";
-import WhyTrustUs from "./components/Trust";
+import WhyUs from "./components/Trust";
 import BusinessStrategy from "./components/BusinesStrategy";
 import OurPartners from "./components/Partners";
 import LatestBlog from "./components/LatestBlog";
@@ -12,19 +12,41 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <div className="max-w-[1440px] bg-white mx-auto">
-        <Navbar />
+      <Navbar />
+
+      <section id="home" className="scroll-mt-28">
         <HeroSection />
-        <WhyTrustUs />
+      </section>
+
+      <section id="why-us" className="scroll-mt-28">
+        <WhyUs />
+      </section>
+
+      <section id="strategy" className="scroll-mt-28">
         <BusinessStrategy />
+      </section>
+
+      <section id="partners" className="scroll-mt-28">
         <OurPartners />
+      </section>
+
+      <section id="blog" className="scroll-mt-28">
         <LatestBlog />
+      </section>
+
+      <section id="clients" className="scroll-mt-28">
         <HappyClients />
+      </section>
+
+      <section id="faq" className="scroll-mt-28">
         <FAQSection />
+      </section>
+
+      <section id="contact" className="scroll-mt-28">
         <Footer />
-      </div>
+      </section>
     </>
-  )
-};
+  );
+}
 
 export default App;
