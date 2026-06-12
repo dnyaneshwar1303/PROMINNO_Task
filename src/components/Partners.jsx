@@ -2,10 +2,10 @@ import React from "react";
 
 function OurPartners() {
   const logos = [
-    "/logoipsum.png",
-    "/logoipsum.png",
-    "/logoipsum.png",
-    "/logoipsum.png",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp-HlSQfybeA05PcvqdH-8n1LLSe9LChGvkQ&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS5JeaYPu9JsFPOXlKj34pIMc1z6760E5keg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVHluIQogt4wj05674Nac2Jp91gaGfHnsxg&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0SLaX8eueusj59Gj0XM_D0BIxkDJgxuOLA&s",
   ];
 
   return (
