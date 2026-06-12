@@ -3,8 +3,7 @@ function Navbar() {
     { name: "Home", path: "#home" },
     { name: "Why Us", path: "#why-us" },
     { name: "Strategy", path: "#strategy" },
-    { name: "Blog", path: "#blog" },
-    { name: "Contact", path: "#contact" },
+    { name: "Blog", path: "#blog" }
   ];
 
   return (
