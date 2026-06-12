@@ -42,7 +42,7 @@ function HappyClients() {
                 <div className="flex items-center space-x-3">
                   <div className="w-11 h-11 bg-gray-300 rounded-full overflow-hidden transition-all duration-300 ease-in-out hover:scale-110">
                     <img
-                      src="/public/Wright.jpg"
+                      src="/Wright.jpg"
                       alt="avatar"
                       className="w-full h-full object-cover transition-all duration-300 ease-in-out hover:scale-110"
                     />
